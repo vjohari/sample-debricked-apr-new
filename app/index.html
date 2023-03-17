@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sample App</title>
+    <meta name="description" content="Sample App for Debricked scan.">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <![endif]-->
+  </head>
+  <body data-ng-app="eSampleApp">
+    <!--[if lte IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header" role="banner">
+      <div class="row">
+        <a href="/">
+          <h1 class="title columns">Sample App</h1>
+        </a>
+      </div>
+    </div>
+    <!-- / .header -->
+    
+    <div data-ng-view=""></div>
+
+    <div class="footer" role="contentInfo">
+      <div class="row">
+        <p>&copy; 2014 <a href="http://github.com/tgdev" target="_blank">TG DEV</a> | <a href="https://github.com/rohitbaryha1/sample-debricked-apr" target="_blank">View on github</a></p>
+        <small>* This litle webapp is in no way affiliated with Sample.</small>
+      </div>
+    </div>
+    <!-- / .footer -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+      <script src="bower_components/jquery/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/filters/percentage.js"></script>
+      <script src="bower_components/components-foundation/js/foundation/foundation.js"></script>
+      <script src="bower_components/components-foundation/js/foundation/foundation.tooltip.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27423893-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
